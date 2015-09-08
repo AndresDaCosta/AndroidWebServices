@@ -2,6 +2,7 @@ package com.example.webservices;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -11,6 +12,8 @@ public class Activity_notification extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_activity_notification);
+		String strecivved = getIntent().getStringExtra("contigo");
+		Log.e("mensaje recibido", strecivved);
 	}
 
 	@Override
